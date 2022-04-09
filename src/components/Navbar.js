@@ -1,4 +1,4 @@
-import { Grid } from "@mui/material";
+import { Grid, IconButton } from "@mui/material";
 import logo from "../assets/shared/logo.svg";
 import hamburgerIcon from "../assets/shared/icon-hamburger.svg";
 
@@ -14,7 +14,9 @@ function Navbar() {
         <img src={logo} alt="logo"></img>
       </Grid>
       <Grid item id="hamburger_icon">
-        <img src={hamburgerIcon} alt="hamburger_icon"></img>
+        <IconButton>
+          <img src={hamburgerIcon} alt="hamburger_icon"></img>
+        </IconButton>
       </Grid>
     </Grid>
   );
